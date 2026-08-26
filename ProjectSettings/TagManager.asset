@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -13,14 +13,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Greed
+  - Human
+  - Building
+  - Ground
+  - Projectile
+  - Interactable
+  - Pickup
   - 
   - 
   - 
@@ -41,3 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1727537437
+    locked: 0
+  - name: World
+    uniqueID: 4068454651
+    locked: 0
+  - name: Buildings
+    uniqueID: 3118463103
+    locked: 0
+  - name: Characters
+    uniqueID: 979795613
+    locked: 0
+  - name: Foreground
+    uniqueID: 1605340431
+    locked: 0
+  - name: Effects
+    uniqueID: 2388620099
+    locked: 0
+  - name: UI
+    uniqueID: 3638301761
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []
