@@ -5,7 +5,6 @@
 #
 # This template is maintained from the github/gitignore repository
 # and distributed under Creative Commons Zero v1.0 Universal license.
-
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
@@ -105,3 +104,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Auto-generated cache in Assets folder
+/[Aa]ssets/[Ss]ceneDependencyCache*
