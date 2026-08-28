@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TerritoryBalance
   m_EditorClassIdentifier: Assembly-CSharp::TerritoryBalanceConfig
   startingSize: 25
-  expansionSize: 20
+  expansionSize: 25
   expansionCost: 5

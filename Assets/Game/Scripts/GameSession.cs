@@ -8,6 +8,7 @@ public sealed class GameSession
     public SessionEndReason EndReason { get; private set; }
 
     public int Day => clock.Day;
+    public DayPhase Phase => clock.Phase;
 
     public GameSession(
         IGameClock clock,
@@ -31,6 +32,14 @@ public sealed class GameSession
             return;
 
         clock.AdvanceDay();
+    }
+
+    public void AdvancePhase()
+    {
+        if (!IsRunning)
+            return;
+
+        clock.AdvancePhase();
     }
 
     public void End(SessionEndReason reason)

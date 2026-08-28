@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using System.Collections.Generic;
 
 public static class BalanceValidator
 {
@@ -15,22 +16,28 @@ public static class BalanceValidator
             return;
         }
 
-        string path =
-            AssetDatabase.GUIDToAssetPath(guids[0]);
+        var report = new List<string>();
 
-        var config =
-            AssetDatabase.LoadAssetAtPath<GameBalanceConfig>(path);
-
-        var errors = config.ValidateConfig();
-
-        if (errors.Count == 0)
+        foreach (string guid in guids)
         {
-            Debug.Log("Game Balance: OK");
-            return;
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            var config = AssetDatabase.LoadAssetAtPath<GameBalanceConfig>(path);
+
+            if (config == null)
+            {
+                report.Add($"{path}: asset не удалось загрузить.");
+                continue;
+            }
+
+            var errors = config.ValidateConfig();
+
+            foreach (string error in errors)
+                report.Add($"{path}: {error}");
         }
 
-        Debug.LogError(
-            "Ошибки GameBalance:\n\n" +
-            string.Join("\n", errors));
+        if (report.Count == 0)
+            Debug.Log($"Game Balance: OK. Проверено assets: {guids.Length}.");
+        else
+            Debug.LogError("Ошибки GameBalance:\n\n" + string.Join("\n", report));
     }
 }

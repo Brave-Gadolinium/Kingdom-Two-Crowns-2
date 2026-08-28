@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f8ab1ccdd73be4bb9d2e750959227d, type: 3}
   m_Name: EconomyBalance
   m_EditorClassIdentifier: Assembly-CSharp::EconomyBalanceConfig
-  startingGreed: 10
+  startingGreed: 12
   recruitCost: 1
-  wallCost: 5
-  towerCost: 7
+  wallCost: 6
+  towerCost: 8

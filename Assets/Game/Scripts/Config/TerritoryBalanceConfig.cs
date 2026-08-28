@@ -6,6 +6,6 @@ using UnityEngine;
 public class TerritoryBalanceConfig : ScriptableObject
 {
     [Min(1f)] public float startingSize = 25f;
-    [Min(1f)] public float expansionSize = 20f;
+    [Min(1f)] public float expansionSize = 25f;
     [Min(1)] public int expansionCost = 5;
 }

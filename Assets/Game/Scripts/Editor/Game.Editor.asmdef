@@ -1,0 +1,9 @@
+{
+    "name": "Game.Editor",
+    "references": [
+        "GUID:0b8d7e4f19d4d6f419e952845f22c90c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}
