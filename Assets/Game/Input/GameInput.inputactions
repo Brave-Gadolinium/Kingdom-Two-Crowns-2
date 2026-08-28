@@ -433,16 +433,6 @@
             "id": "2e7ff52d-994c-43d5-b0e0-64a65cbe56fd",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "d9d19da4-fc02-48e6-a97e-d5a67d435d9a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false,
-                    "priority": 0
-                },
-                {
                     "name": "Pause",
                     "type": "Button",
                     "id": "78d62fc2-12b2-4bd7-aa0f-e55fd5c05213",
@@ -454,17 +444,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "f9a0dd3a-1ff5-4eb7-abac-730102684603",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "c16378c8-0bc4-4d89-afce-3ef8b4bba753",

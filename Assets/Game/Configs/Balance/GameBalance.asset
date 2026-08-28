@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb558b98f0dc5e45b38b68e48e8d291, type: 3}
+  m_Name: GameBalance
+  m_EditorClassIdentifier: Assembly-CSharp::GameBalanceConfig
+  time: {fileID: 11400000, guid: 77038c53a30a6be4ca9825ad4ea3ffa0, type: 2}
+  economy: {fileID: 11400000, guid: 8c98694ade74af147b34fe91687ae5ca, type: 2}
+  territory: {fileID: 11400000, guid: 9520312af21b3b44a921ec2f3491517f, type: 2}
