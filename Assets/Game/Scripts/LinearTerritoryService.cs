@@ -12,4 +12,9 @@ public sealed class LinearTerritoryService : ITerritoryService
         if (amount > 0)
             Size += amount;
     }
+
+    public bool Contains(float worldX)
+    {
+        return worldX >= -Size * 0.5f && worldX <= Size * 0.5f;
+    }
 }

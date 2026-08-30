@@ -16,3 +16,5 @@ MonoBehaviour:
   dawnDuration: 20
   dayDuration: 120
   duskDuration: 20
+  sunDamagePerSecond: 8
+  sunGraceDuration: 2

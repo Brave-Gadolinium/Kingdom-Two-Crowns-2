@@ -38,6 +38,15 @@ public class GameBalanceConfig : ScriptableObject
                 errors.Add("Dusk Duration должен быть больше 0.");
         }
 
+        if (time != null)
+        {
+            if (time.sunDamagePerSecond < 0)
+                errors.Add("Sun Damage Per Second не может быть меньше 0.");
+
+            if (time.sunGraceDuration < 0)
+                errors.Add("Sun Grace Duration не может быть меньше 0.");
+        }
+
         if (economy != null)
         {
             if (economy.startingGreed < 0)
